@@ -151,6 +151,44 @@
       <artifactId>kerb-simplekdc</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>edu.illinois.confuzz</groupId>
+      <artifactId>confuzz-guidance</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <exclusions>
+        <exclusion>
+          <groupId>com.squareup.okio</groupId>
+          <artifactId>okio</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.ow2.asm</groupId>
+          <artifactId>asm-commons</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <!-- JUnit-QuickCheck: API to write generators -->
+    <dependency>
+      <groupId>com.pholser</groupId>
+      <artifactId>junit-quickcheck-generators</artifactId>
+      <version>1.0</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- JQF: test dependency for @Fuzz annotation -->
+    <dependency>
+      <groupId>edu.berkeley.cs.jqf</groupId>
+      <artifactId>jqf-fuzz</artifactId>
+      <version>1.9</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.ow2.asm</groupId>
+          <artifactId>asm-tree</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.ow2.asm</groupId>
+          <artifactId>asm-commons</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
   </dependencies>
 
   <build>
