@@ -203,6 +203,12 @@
           <include>hbase-default.xml</include>
         </includes>
       </resource>
+      <resource>
+        <directory>src/main/resources/</directory>
+        <includes>
+          <include>hbase-ctest.xml</include>
+        </includes>
+      </resource>
     </resources>
     <testResources>
       <testResource>
