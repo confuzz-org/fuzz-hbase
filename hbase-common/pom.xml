@@ -206,7 +206,7 @@
       <resource>
         <directory>src/main/resources/</directory>
         <includes>
-          <include>hbase-ctest.xml</include>
+          <include>ctest.xml</include>
         </includes>
       </resource>
     </resources>

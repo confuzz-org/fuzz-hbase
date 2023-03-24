@@ -113,7 +113,7 @@ public class HBaseConfiguration extends Configuration {
   public static Configuration addHbaseResources(Configuration conf) {
     conf.addResource("hbase-default.xml");
     conf.addResource("hbase-site.xml");
-    conf.addResource("hbase-ctest.xml"); //CTEST
+    conf.addResource("ctest.xml"); //CTEST
 
     checkDefaultsVersion(conf);
     return conf;
