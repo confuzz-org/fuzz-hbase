@@ -1,0 +1,627 @@
+[
+  {
+    "name": "yarn.app.mapreduce.am.log.level",
+    "regex": "OFF|FATAL|ERROR|WARN|INFO|DEBUG|TRACE|ALL"
+  },
+  {
+    "name": "mapreduce.map.log.level",
+    "regex": "OFF|FATAL|ERROR|WARN|INFO|DEBUG|TRACE|ALL"
+  },
+  {
+    "name": "mapreduce.reduce.log.level",
+    "regex": "OFF|FATAL|ERROR|WARN|INFO|DEBUG|TRACE|ALL"
+  },
+  {
+    "name": "mapreduce.job.sharedcache.mode",
+    "regex": "disabled|jobjar(,libjars)?(,files)?(,archives)?|libjars(,files)?(,archives)?|files(,archives)?|archives"
+  },
+  {
+    "name": "mapreduce.output.fileoutputformat.compress.type",
+    "regex": "NONE|RECORD|BLOCK"
+  },
+  {
+    "name": "map.sort.class",
+    "regex": "org\\.apache\\.hadoop\\.util\\.(Quick|Merge|Heap)Sort"
+  },
+  {
+    "name": "mapreduce.output.fileoutputformat.compress.codec",
+    "regex": "org\\.apache\\.hadoop\\.io\\.compress\\.(Default|BZip2|Deflate|Gzip|Lz4|Passthrough|Snappy|ZStandard)Codec"
+  },
+  {
+    "name": "mapreduce.client.output.filter",
+    "regex": "NONE|KILLED|FAILED|SUCCEEDED|ALL"
+  },
+  {
+    "name": "mapreduce.framework.name",
+    "regex": "local|classic|yarn"
+  },
+  {
+    "name": "mapreduce.jobhistory.http.policy",
+    "regex": "HTTP_ONLY|HTTPS_ONLY"
+  },
+  {
+    "name": "mapreduce.jobhistory.jhist.format",
+    "regex": "json|binary"
+  },
+  {
+    "name": "yarn.resourcemanager.placement-constraints.handler",
+    "regex": "placement-processor|scheduler|disabled"
+  },
+  {
+    "name": "yarn.http.policy",
+    "regex": "HTTP_ONLY|HTTPS_ONLY"
+  },
+  {
+    "name": "yarn.resourcemanager.scheduler.class",
+    "regex": "org\\.apache\\.hadoop\\.yarn\\.server\\.resourcemanager\\.scheduler\\.(capacity\\.CapacityScheduler|fair\\.FairScheduler|fifo\\.FifoScheduler)"
+  },
+  {
+    "name": "yarn.resourcemanager.store.class",
+    "regex": "org\\.apache\\.hadoop\\.yarn\\.server\\.resourcemanager\\.recovery\\.(FileSystem|Leveldb|Memory|Null|ZK)RMStateStore"
+  },
+  {
+    "name": "yarn.client.failover-proxy-provider",
+    "regex": "org\\.apache\\.hadoop\\.yarn\\.client\\.(Configured|AutoRefresh|AutoRefreshNoHA|DefaultNoHA|RequestHedging)RMFailoverProxyProvider"
+  },
+  {
+    "name": "yarn.resourcemanager.nodemanager.minimum.version",
+    "regex": "NONE|EqualToRM"
+  },
+  {
+    "name": "yarn.resourcemanager.scheduler.monitor.policies",
+    "regex": "org\\.apache\\.hadoop\\.yarn\\.server\\.resourcemanager\\.monitor\\.capacity\\.(ProportionalCapacityPreemption|QueueManagementDynamicEdit)Policy"
+  },
+  {
+    "name": "yarn.resourcemanager.configuration.provider-class",
+    "regex": "org\\.apache\\.hadoop\\.yarn\\.(FileSystemBased|Local)ConfigurationProvider"
+  },
+  {
+    "name": "yarn.resourcemanager.reservation-system.class",
+    "regex": "org\\.apache\\.hadoop\\.yarn\\.server\\.resourcemanager\\.reservation\\.(Capacity|Fair)ReservationSystem|"
+  },
+  {
+    "name": "yarn.resourcemanager.reservation-system.plan.follower",
+    "regex": "org\\.apache\\.hadoop\\.yarn\\.server\\.resourcemanager\\.reservation\\.(Capacity|Fair)SchedulerPlanFollower|"
+  },
+  {
+    "name": "yarn.nodemanager.container-executor.class",
+    "regex": "org\\.apache\\.hadoop\\.yarn\\.server\\.nodemanager\\.(Default|Linux|WindowsSecure)ContainerExecutor"
+  },
+  {
+    "name": "yarn.nodemanager.container-localizer.log.level",
+    "regex": "TRACE|DEBUG|INFO|WARN|ERROR|FATAL"
+  },
+  {
+    "name": "yarn.nodemanager.default-container-executor.log-dirs.permissions",
+    "regex": "[0-7][0-7][0-7]"
+  },
+  {
+    "name": "yarn.log-aggregation.file-formats",
+    "regex": "TFile(,IFile)?"
+  },
+  {
+    "name": "yarn.nodemanager.remote-app-log-dir-suffix",
+    "regex": "[a-zA-Z0-9]+"
+  },
+  {
+    "name": "yarn.nodemanager.linux-container-executor.resources-handler.class",
+    "regex": "org\\.apache\\.hadoop\\.yarn\\.server\\.nodemanager\\.util\\.(Default|Cgroups)LCEResourcesHandler"
+  },
+  {
+    "name": "yarn.nodemanager.linux-container-executor.nonsecure-mode.local-user",
+    "regex": "^[_.A-Za-z0-9][-@_.A-Za-z0-9]{0,255}?[$]?$"
+  },
+  {
+    "name": "yarn.nodemanager.runtime.linux.allowed-runtimes",
+    "regex": "default(,docker)?(,runc)?(,javasandbox)?"
+  },
+  {
+    "name": "yarn.nodemanager.runtime.linux.docker.image-name",
+    "regex": "[a-zA-Z]+(-[a-zA-Z0-9])*"
+  },
+  {
+    "name": "yarn.nodemanager.runtime.linux.sandbox-mode",
+    "regex": "disabled|permissive|enforcing"
+  },
+  {
+    "name": "yarn.nodemanager.runtime.linux.sandbox-mode.local-dirs.permissions",
+    "regex": "read(,write)?(,execute)?(,delete)?|write(,execute)?(,delete)?|execute(,delete)?|delete"
+  },
+  {
+    "name": "yarn.nodemanager.aux-services",
+    "regex": "|[_a-zA-Z][_a-zA-Z0-9](,[_a-zA-Z][_a-zA-Z0-9])*"
+  },
+  {
+    "name": "yarn.nodemanager.resourcemanager.minimum.version",
+    "regex": "NONE|EqualToNM"
+  },
+  {
+    "name": "yarn.timeline-service.http-authentication.type",
+    "regex": "simple|kerberos"
+  },
+  {
+    "name": "yarn.timeline-service.state-store-class",
+    "regex": "org\\.apache\\.hadoop\\.yarn\\.server\\.resourcemanager\\.recovery\\.(FileSystem|Leveldb|Memory|Null|ZK)RMStateStore"
+  },
+  {
+    "name": "yarn.timeline-service.hbase-schema.prefix",
+    "regex": "(dev|prod|staging)\\."
+  },
+  {
+    "name": "yarn.node-labels.configuration-type",
+    "regex": "centralized|delegated-centralized|distributed"
+  },
+  {
+    "name": "yarn.nodemanager.node-labels.provider",
+    "regex": "config|script|"
+  },
+  {
+    "name": "yarn.nodemanager.node-attributes.provider",
+    "regex": "config|script|"
+  },
+  {
+    "name": "yarn.federation.state-store.class",
+    "regex": "org\\.apache\\.hadoop\\.yarn\\.server\\.federation\\.store\\.impl\\.(Memory|SQL|ZooKeeper)FederationStateStore"
+  },
+  {
+    "name": "yarn.resourcemanager.application-https.policy",
+    "regex": "NONE|LENIENT|STRICT"
+  },
+  {
+    "name": "yarn.scheduler.configuration.store.class",
+    "regex": "file|memory|leveldb|zk"
+  },
+  {
+    "name": "yarn.nodemanager.resource-plugins",
+    "regex": "|yarn\\.io/gpu(,yarn\\.io/fpga)|yarn\\.io/fpga"
+  },
+  {
+    "name": "myage",
+    "regex": "^[0-9]{1,3}"
+  },
+  {
+    "name": "myname",
+    "regex": "ShuaiWang"
+  },
+  {
+    "name": "myemail",
+    "regex": "^[a-zA-Z0-9._%+-]{3}@[a-zA-Z0-9.-]{3}\\.[a-zA-Z]{2,4}$"
+  },
+  {
+    "name": "hadoop.security.authentication",
+    "regex": "simple|kerberos"
+  },
+  {
+    "name": "hadoop.security.groups.shell.command.timeout",
+    "regex": "[0-9]{1,9}(m|s|h)"
+  },
+  {
+    "name": "hadoop.security.group.mapping.ldap.ssl.keystore.password",
+    "regex": "[0-9a-zA-Z]+"
+  },
+  {
+    "name": "hadoop.security.group.mapping.ldap.conversion.rule",
+    "regex": "to_upper|to_lower|none"
+  },
+  {
+    "name": "hadoop.security.group.mapping.ldap.bind.password",
+    "regex": "[0-9a-zA-Z]+"
+  },
+  {
+    "name": "hadoop.service.shutdown.timeout",
+    "regex": "[0-9]{1,9}(m|s|h)"
+  },
+  {
+    "name": "hadoop.rpc.protection",
+    "regex": "(authentication|integrity|privacy)(,(authentication|integrity|privacy))*"
+  },
+  {
+    "name": "hadoop.security.auth_to_local.mechanism",
+    "regex": "hadoop|MIT"
+  },
+  {
+    "name": "io.compression.codec.bzip2.library",
+    "regex": "system-native|java-builtin"
+  },
+  {
+    "name": "fs.viewfs.rename.strategy",
+    "regex": "SAME_MOUNTPOINT|SAME_TARGET_URI_ACROSS_MOUNTPOINT|SAME_FILESYSTEM_ACROSS_MOUNTPOINT"
+  },
+  {
+    "name": "fs.ftp.data.connection.mode",
+    "regex": "ACTIVE_LOCAL_DATA_CONNECTION_MODE|PASSIVE_LOCAL_DATA_CONNECTION_MODE|PASSIVE_REMOTE_DATA_CONNECTION_MODE"
+  },
+  {
+    "name": "fs.ftp.transfer.mode",
+    "regex": "STREAM_TRANSFER_MODE|BLOCK_TRANSFER_MODE|COMPRESSED_TRANSFER_MODE"
+  },
+  {
+    "name": "fs.s3a.assumed.role.session.duration",
+    "regex": "(1[5-9]m)|([2-5][0-9]m)|60m|1h"
+  },
+  {
+    "name": "fs.s3a.delegation.token.binding",
+    "regex": "org\\.apache\\.hadoop\\.fs\\.s3a\\.auth\\.delegation\\.SessionTokenBinding|org\\.apache\\.hadoop\\.fs\\.s3a\\.auth\\.delegation\\.FullCredentialsTokenBinding|org\\.apache\\.hadoop\\.fs\\.s3a\\.auth\\.delegation\\.RoleTokenBinding"
+  },
+  {
+    "name": "fs.s3a.multipart.size",
+    "regex": "[0-9]{1,9}(K|M|G|T|P)"
+  },
+  {
+    "name": "fs.s3a.multipart.threshold",
+    "regex": "[0-9]{1,9}(K|M|G|T|P)"
+  },
+  {
+    "name": "fs.s3a.acl.default",
+    "regex": "Private|PublicRead|PublicReadWrite|AuthenticatedRead|LogDeliveryWrite|BucketOwnerRead|BucketOwnerFullControl|"
+  },
+  {
+    "name": "fs.s3a.encryption.algorithm",
+    "regex": "AES256|SSE-KMS|SSE-C|CSE-KMS"
+  },
+  {
+    "name": "fs.s3a.block.size",
+    "regex": "[0-9]{1,9}(K|M|G|T|P)"
+  },
+  {
+    "name": "fs.azure.sas.expiry.period",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "hadoop.util.hash.type",
+    "regex": "murmur|jenkins"
+  },
+  {
+    "name": "ipc.[port_number].callqueue.impl",
+    "regex": "java\\.util\\.concurrent\\.LinkedBlockingQueue|org\\.apache\\.hadoop\\.ipc\\.FairCallQueue"
+  },
+  {
+    "name": "ipc.[port_number].scheduler.impl",
+    "regex": "org\\.apache\\.hadoop\\.ipc\\.DefaultRpcScheduler|org\\.apache\\.hadoop\\.ipc\\.DecayRpcScheduler"
+  },
+  {
+    "name": "ipc.[port_number].cost-provider.impl",
+    "regex": "org\\.apache\\.hadoop\\.ipc\\.DefaultCostProvider|org\\.apache\\.hadoop\\.ipc\\.WeightedTimeCostProvider"
+  },
+  {
+    "name": "hadoop.http.authentication.type",
+    "regex": "simple|kerberos"
+  },
+  {
+    "name": "hadoop.http.authentication.kerberos.endpoint.whitelist",
+    "regex": "/[a-zA-Z](,/[a-zA-Z])*|"
+  },
+  {
+    "name": "hadoop.http.staticuser.user",
+    "regex": "[a-zA-Z]+(\\.[a-zA-Z]+)*"
+  },
+  {
+    "name": "hadoop.ssl.hostname.verifier",
+    "regex": "DEFAULT|STRICT|STRICT_IE6|DEFAULT_AND_LOCALHOST|ALLOW_ALL"
+  },
+  {
+    "name": "hadoop.ssl.enabled.protocols",
+    "regex": "TLSv1\\.(2|3)"
+  },
+  {
+    "name": "fs.permissions.umask-mode",
+    "regex": "[0-7]{3}"
+  },
+  {
+    "name": "rpc.metrics.timeunit",
+    "regex": "NANOSECONDS|MICROSECONDS|MILLISECONDS|SECONDS|MINUTES|HOURS|DAYS"
+  },
+  {
+    "name": "hadoop.security.kms.client.encrypted.key.cache.low-watermark",
+    "regex": "0\\.[0-9]{1,3}f|1f"
+  },
+  {
+    "name": "fs.adl.oauth2.access.token.provider.type",
+    "regex": "ClientCredential|RefreshToken|MSI|DeviceCode|Custom"
+  },
+  {
+    "name": "adl.ssl.channel.mode",
+    "regex": "OpenSSL|Default_JSE|Default"
+  },
+  {
+    "name": "fs.getspaceused.classname",
+    "regex": "org\\.apache\\.hadoop\\.fs\\.DU|org\\.apache\\.hadoop\\.fs\\.WindowsGetSpaceUsed|org\\.apache\\.hadoop\\.fs\\.DFCachingGetSpaceUsed|org\\.apache\\.hadoop\\.hdfs\\.server\\.datanode\\.fsdataset\\.impl\\.ReplicaCachingGetSpaceUsed"
+  },
+  {
+    "name": "fs.s3a.fast.upload.buffer",
+    "regex": "disk|array|bytebuffer"
+  },
+  {
+    "name": "fs.s3a.committer.name",
+    "regex": "file|directory|partitioned|magic"
+  },
+  {
+    "name": "fs.s3a.committer.staging.conflict-mode",
+    "regex": "append|fail|replace"
+  },
+  {
+    "name": "fs.s3a.select.input.csv.header",
+    "regex": "none|ignore|use"
+  },
+  {
+    "name": "fs.s3a.select.input.compression",
+    "regex": "none|gzip"
+  },
+  {
+    "name": "fs.s3a.select.output.csv.quote.fields",
+    "regex": "always|asneeded"
+  },
+  {
+    "name": "fs.s3a.list.version",
+    "regex": "2|1"
+  },
+  {
+    "name": "fs.s3a.change.detection.mode",
+    "regex": "server|client|warn|none"
+  },
+  {
+    "name": "fs.s3a.ssl.channel.mode",
+    "regex": "default_jsse|default_jsse_with_gcm|default|openssl"
+  },
+  {
+    "name": "hadoop.security.random.device.file.path",
+    "regex": "/dev/urandom|/dev/random"
+  },
+  {
+    "name": "ha.zookeeper.parent-znode",
+    "regex": "/hadoop-ha|/shuai|/uiuc"
+  },
+  {
+    "name": "hadoop.hdfs.configuration.version",
+    "regex": "1"
+  },
+  {
+    "name": "dfs.http.policy",
+    "regex": "HTTP_ONLY|HTTPS_ONLY|HTTP_AND_HTTPS"
+  },
+  {
+    "name": "dfs.https.server.keystore.resource",
+    "regex": "ssl-server\\.xml"
+  },
+  {
+    "name": "dfs.client.https.keystore.resource",
+    "regex": "ssl-client\\.xml"
+  },
+  {
+    "name": "dfs.datanode.dns.interface",
+    "regex": "default|eth0|eth1"
+  },
+  {
+    "name": "dfs.datanode.httpserver.filter.handlers",
+    "regex": "org\\.apache\\.hadoop\\.hdfs\\.server\\.datanode\\.web\\.RestCsrfPreventionFilterHandler"
+  },
+  {
+    "name": "dfs.datanode.du.reserved.calculator",
+    "regex": "org\\.apache\\.hadoop\\.hdfs\\.server\\.datanode\\.fsdataset\\.impl\\.ReservedSpaceCalculator$ReservedSpaceCalculatorAbsolute|"
+  },
+  {
+    "name": "dfs.namenode.edits.journal-plugin.qjournal",
+    "regex": "org\\.apache\\.hadoop\\.hdfs\\.qjournal\\.client\\.QuorumJournalManager"
+  },
+  {
+    "name": "dfs.permissions.superusergroup",
+    "regex": "supergroup|[a-z]+group"
+  },
+  {
+    "name": "dfs.datanode.data.dir.perm",
+    "regex": "[0-7]{3}"
+  },
+  {
+    "name": "dfs.client.block.write.replace-datanode-on-failure.policy",
+    "regex": "DEFAULT|ALWAYS|NEVER"
+  },
+  {
+    "name": "dfs.datanode.lifeline.interval.seconds",
+    "regex": "[0-9]{1,9}"
+  },
+  {
+    "name": "dfs.namenode.decommission.monitor.class",
+    "regex": "org\\.apache\\.hadoop\\.hdfs\\.server\\.blockmanagement\\.DatanodeAdminDefaultMonitor|org\\.apache\\.hadoop\\.hdfs\\.server\\.blockmanagement\\.DatanodeAdminBackoffMonitor"
+  },
+  {
+    "name": "dfs.datanode.volumes.replica-add.threadpool.size",
+    "lower": 1
+  },
+  {
+    "name": "dfs.image.compression.codec",
+    "regex": "org\\.apache\\.hadoop\\.io\\.compress\\.DefaultCodec"
+  },
+  {
+    "name": "dfs.datanode.shared.file.descriptor.paths",
+    "regex": "\\/dev\\/shm,\\/tmp|\\/tmp|\\/dev\\/shm"
+  },
+  {
+    "name": "dfs.namenode.write.stale.datanode.ratio",
+    "regex": "0\\.([0-9]+){1,3}f|1\\.0f"
+  },
+  {
+    "name": "dfs.namenode.invalidate.work.pct.per.iteration",
+    "regex": "0\\.([0-9]+){1,3}f|1\\.0f"
+  },
+  {
+    "name": "dfs.datanode.outliers.report.interval",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "dfs.namenode.slowpeer.collect.interval",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "dfs.encrypt.data.transfer.algorithm",
+    "regex": "3des|rc4"
+  },
+  {
+    "name": "dfs.encrypt.data.transfer.cipher.suites",
+    "regex": "AES|CTR|NoPadding|^ $"
+  },
+  {
+    "name": "dfs.encrypt.data.transfer.cipher.key.bitlength",
+    "regex": "128|192|256"
+  },
+  {
+    "name": "dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction",
+    "regex": "0\\.[0-9]f|1\\.0f"
+  },
+  {
+    "name": "dfs.namenode.retrycache.heap.percent",
+    "regex": "0\\.([0-9]{1,2})f|1\\.0f"
+  },
+  {
+    "name": "dfs.webhdfs.socket.connect-timeout",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "dfs.webhdfs.socket.read-timeout",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "dfs.datanode.processcommands.threshold",
+    "regex": "[0-9]{1,9}(ms|s)"
+  },
+  {
+    "name": "dfs.namenode.reencrypt.throttle.limit.handler.ratio",
+    "regex": "0\\.([0-9]+){1,3}|1\\.0"
+  },
+  {
+    "name": "dfs.namenode.reencrypt.throttle.limit.updater.ratio",
+    "regex": "0\\.([0-9]+){1,3}|1\\.0"
+  },
+  {
+    "name": "dfs.namenode.top.windows.minutes",
+    "regex": "1,5,25|[0-9]{1,9},[0-9]{1,9},[0-9]{1,9}"
+  },
+  {
+    "name": "dfs.webhdfs.rest-csrf.methods-to-ignore",
+    "regex": "((GET|OPTIONS|HEAD|TRACE),)*(GET|OPTIONS|HEAD|TRACE|)"
+  },
+  {
+    "name": "dfs.xframe.value",
+    "regex": "DENY|SAMEORIGIN|ALLOW-FROM"
+  },
+  {
+    "name": "dfs.namenode.hosts.provider.classname",
+    "regex": "org\\.apache\\.hadoop\\.hdfs\\.server\\.blockmanagement\\.HostFileManager|org\\.apache\\.hadoop\\.hdfs\\.server\\.blockmanagement\\.CombinedHostFileManager"
+  },
+  {
+    "name": "dfs.balancer.service.interval",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "dfs.checksum.combine.mode",
+    "regex": "MD5MD5CRC|COMPOSITE_CRC"
+  },
+  {
+    "name": "dfs.datanode.fsdataset.volume.choosing.policy",
+    "regex": "org\\.apache\\.hadoop\\.hdfs\\.server\\.datanode\\.fsdataset\\.RoundRobinVolumeChoosingPolicy|org\\.apache\\.hadoop\\.hdfs\\.server\\.datanode\\.fsdataset\\.AvailableSpaceVolumeChoosingPolicy"
+  },
+  {
+    "name": "dfs.datanode.oob.timeout-ms",
+    "regex": "[0-9]{1,9},[0-9]{1,9},[0-9]{1,9},[0-9]{1,9}"
+  },
+  {
+    "name": "dfs.datanode.replica.cache.expiry.time",
+    "regex": "[0-9]{1,9}(ms|s|m)"
+  },
+  {
+    "name": "dfs.namenode.available-space-block-placement-policy.balanced-space-preference-fraction",
+    "regex": "0\\.[0-9]|1\\.0|0\\.0"
+  },
+  {
+    "name": "dfs.namenode.available-space-rack-fault-tolerant-block-placement-policy.balanced-space-preference-fraction",
+    "regex": "0\\.[0-9]|1\\.0|0\\.0"
+  },
+  {
+    "name": "dfs.storage.policy.satisfier.mode",
+    "regex": "external|none"
+  },
+  {
+    "name": "dfs.disk.balancer.plan.valid.interval",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "dfs.lock.suppress.warning.interval",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "dfs.datanode.disk.check.min.gap",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "dfs.datanode.disk.check.timeout",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "dfs.qjm.operations.timeout",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "dfs.namenode.gc.time.monitor.observation.window.ms",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "dfs.namenode.gc.time.monitor.sleep.interval.ms",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "dfs.client.short.circuit.num",
+    "lower": 0,
+    "upper": 5
+  },
+  {
+    "name": "file.bytes-per-checksum",
+    "lower": 1
+  },
+  {
+    "name": "dfs.datanode.disk.check.timeout",
+    "lower": 1
+  },
+  {
+    "name": "dfs.namenode.storage.dir.perm",
+    "regex": "[0-7][0-7][0-7]"
+  },
+  {
+    "name": "dfs.replication.max",
+    "upper": 32766,
+    "lower": 1
+  },
+  {
+    "name": "dfs.namenode.fs-limits.max-xattr-size",
+    "lower": 1,
+    "upper": 32768
+  },
+  {
+    "name": "dfs.namenode.fs-limits.max-directory-items",
+    "upper": 6400000,
+    "lower": 1
+  },
+  {
+    "name": "mapreduce.fileoutputcommitter.algorithm.version",
+    "regex": "1|2"
+  },
+  {
+    "name": "io.file.buffer.size",
+    "lower": 1
+  },
+  {
+    "name": "fs.creation.parallel.count",
+    "lower": 1
+  },
+  {
+    "name": "yarn.timeline-service.client.retry-interval-ms",
+    "lower": 1
+  },
+  {
+    "name": "dfs.datanode.http.internal-proxy.port",
+    "lower": 0,
+    "upper": 65536
+  },
+  {
+    "name": "hadoop.security.groups.cache.secs",
+    "lower": 1
+  }
+]

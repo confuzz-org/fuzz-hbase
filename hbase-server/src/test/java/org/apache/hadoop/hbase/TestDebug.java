@@ -17,12 +17,17 @@ public class TestDebug {
   @Test
   public void test() {
     Configuration conf = HBaseConfiguration.create();
-    String school = conf.get("school", "UIUC");
-    String name = conf.get("name", "confuzz");
-    if (Objects.equals(name, "bug")) {
-      throw new IllegalArgumentException("fake bug");
-    } else {
-      System.out.println("Hello " + school + " " + name);
+    String tasks = conf.get("hbase.regionserver.msginterval");
+    System.out.println("tasks: " + tasks);
+    if (Integer.valueOf(tasks) < 50) {
+      throw new RuntimeException("tasks < 50");
+    }
+    String s = conf.get("fs.s3a.select.output.csv.quote.fields");
+    System.out.println("s: " + s);
+    if (Objects.equals(s, "asneeded")) {
+      throw new RuntimeException("fake asneeded bug");
+    }  else {
+      System.out.println("haha");
     }
   }
 }

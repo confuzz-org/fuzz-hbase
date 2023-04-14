@@ -3147,13 +3147,19 @@
          -->
     <profile>
       <id>hadoop-2.0</id>
-      <activation>
-        <property>
-          <!--Below formatting for dev-support/generate-hadoopX-poms.sh-->
-          <!--h2-->
-          <name>!hadoop.profile</name>
-        </property>
-      </activation>
+<!--      <activation>-->
+<!--        <property>-->
+<!--          &lt;!&ndash;Below formatting for dev-support/generate-hadoopX-poms.sh&ndash;&gt;-->
+<!--          &lt;!&ndash;h2&ndash;&gt;-->
+<!--          <name>!hadoop.profile</name>-->
+<!--        </property>-->
+<!--      </activation>-->
+            <activation>
+              <property>
+                <name>hadoop.profile</name>
+                <value>2.0</value>
+              </property>
+            </activation>
       <modules>
         <module>hbase-hadoop2-compat</module>
       </modules>
@@ -3828,12 +3834,19 @@
     -->
     <profile>
       <id>hadoop-3.0</id>
-      <activation>
-        <property>
-          <name>hadoop.profile</name>
-          <value>3.0</value>
-        </property>
-      </activation>
+<!--      <activation>-->
+<!--        <property>-->
+<!--          <name>hadoop.profile</name>-->
+<!--          <value>3.0</value>-->
+<!--        </property>-->
+<!--      </activation>-->
+            <activation>
+              <property>
+                <!--Below formatting for dev-support/generate-hadoopX-poms.sh-->
+                <!--h2-->
+                <name>!hadoop.profile</name>
+              </property>
+            </activation>
       <modules>
         <!--For now, use hadoop2 compat module-->
         <module>hbase-hadoop2-compat</module>
