@@ -623,5 +623,245 @@
   {
     "name": "hadoop.security.groups.cache.secs",
     "lower": 1
+  },
+  {
+    "name": "hbase.hstore.compaction.date.tiered.cold.window.storage.policy",
+    "regex": "COLD|ALL_SSD|ONE_SSD|HOT"
+  },
+  {
+    "name": "hbase.crypto.algorithm.rng",
+    "regex": "SHA1PRNG|NativePRNG|NativePRNGBlocking|NativePRNGNonBlocking"
+  },
+  {
+    "name": "hbase.security.authentication",
+    "regex": "simple|kerberos"
+  },
+  {
+    "name": "hadoop.htrace.span.receiver.classes",
+    "regex": "org\\.apache\\.hadoop\\.htrace\\.core\\.LocalFileSpanReceiver|org\\.apache\\.hadoop\\.htrace\\.core\\.POJOSpanReceiver|org\\.apache\\.hadoop\\.htrace\\.core\\.SetSpanReceiver|org\\.apache\\.hadoop\\.htrace\\.core\\.StandardOutSpanReceiver"
+  },
+  {
+    "name": "hbase.bucketcache.persistent.file.integrity.check.algorithm",
+    "regex": "MD5|SHA1|SHA256|SHA512"
+  },
+  {
+    "name": "hbase.wal.provider",
+    "regex": "multiwal|defaultProvider|filesystem|asyncfs"
+  },
+  {
+   "name": "hbase.regionserver.region.split.policy",
+   "regex": "org\\.apache\\.hadoop\\.hbase\\.regionserver\\.(SteppingSplitPolicy|BusyRegionSplitPolicy|ConstantSizeRegionSplitPolicy|DisabledRegionSplitPolicy|DelimitedKeyPrefixRegionSplitPolicy|KeyPrefixRegionSplitPolicy|SteppingSplitPolicy)" 
+  },
+  {
+    "name": "hbase.locator.meta.replicas.mode",
+    "regex": "HedgedRead|None|LoadBalance"
+  },
+  {
+    "name": "hbase.mob.delfile.max.count",
+    "lower": 0
+  },
+  {
+    "name": "hbase.http.filter.xframeoptions.mode",
+    "regex": "SAMEORIGIN|DENY|ALLOW"
+  },
+  {
+    "name": "hbase.wal.storage.policy",
+    "regex": "ALL_SSD|ONE_SSD|HOT|COLD|WARM|LAZY_PERSIST"
+  },
+  {
+    "name": "hbase.hstore.checksum.algorithm",
+    "regex": "CRC32|CRC32C|NULL"
+  },
+  {
+    "name": "hbase.wal.meta_provider",
+    "regex": "multiwal|defaultProvider|filesystem|asyncfs"
+  },
+  {
+    "name": "hbase.regionserver.quotas.fs.utilization.chore.timeunit",
+    "regex": "MILLISECONDS|SECONDS|MINUTES|HOURS|DAYS"
+  },
+  {
+    "name": "hbase.meta.replica.count",
+    "lower": 0
+  },
+  {
+    "name": "hbase.hstore.compaction.date.tiered.warm.window.storage.policy",
+    "regex": "COLD|ALL_SSD|ONE_SSD|HOT"
+  },
+  {
+    "name": "hbase.wal.regiongrouping.strategy",
+    "regex": "defaultStrategy|identify|bounded"
+  },
+  {
+    "name": "hbase.regionserver.quotas.region.size.reporting.chore.timeunit",
+    "regex": "MILLISECONDS|SECONDS|MINUTES|HOURS|DAYS"
+  },
+  {
+    "name": "dfs.datanode.balance.bandwidthPerSec",
+    "regex": "[0-9]{1,9}(ms|s|m|h|d)"
+  },
+  {
+    "name": "hbase.hregion.compacting.memstore.type",
+    "regex": "none|basic|eager"
+  },
+  {
+    "name": "hfile.block.cache.policy",
+    "regex": "LRU|TinyLFU|AdaptiveLRU|IndexOnlyLRU"
+  },
+  {
+    "name": "hbase.rpc.client.event-loop.config",
+    "regex": "global-event-loop|^$"
+  },
+  {
+    "name": "hbase.regionserver.region.split_restriction.prefix_length",
+    "lower": 0
+  },
+  {
+    "name": "dfs.checksum.type",
+    "regex": "CRC32|CRC32C|NULL"
+  },
+  {
+    "name": "hbase.rpc.protection",
+    "regex": "authentication|integrity|privacy"
+  },
+  {
+    "name": "hbase.http.jersey.tracing.type",
+    "regex": "ON_DEMAND|OFF"
+  },
+  {
+    "name": "hbase.client.ipc.pool.type",
+    "regex": "round-robin|thread-local"
+  },
+  {
+    "name": "hbase.hstore.compaction.date.tiered.hot.window.storage.policy",
+    "regex": "COLD|ALL_SSD|ONE_SSD|HOT"
+  },
+  {
+    "name": "hbase.mob.compaction.type",
+    "regex": "full|optimized"
+  },
+  {
+    "name": "hbase.normalizer.throughput.max_bytes_per_sec",
+    "regex": "[0-9]{1,9}(k|m|g|t|p)"
+  },
+  {
+    "name": "hbase.regionserver.region.split_restriction.type",
+    "regex": "None|KeyPrefix|DelimitedKeyPrefix"
+  },
+  {
+    "name": "fs.file.impl",
+    "regex": "org\\.apache\\.hadoop\\.fs\\.RawLocalFileSystem|org\\.apache\\.hadoop\\.fs\\.FileSystem"
+  },
+  {
+    "name": "hbase.bytebuff.allocator.class",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.io\\.DeallocateRewriteByteBuffAllocator|org\\.apache\\.hadoop\\.hbase\\.io\\.ByteBuffAllocator"
+  },
+  {
+    "name": "hbase.client.bufferedmutator.classname",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.client\\.BufferedMutatorImpl"
+  },
+  {
+    "name": "hbase.client.connection.impl",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.client\\.ConnectionImplementation"
+  },
+  {
+    "name": "hbase.client.default.rpc.codec",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.codec\\.(CellCodec|CellCodecWithTags|KeyValueCodec|KeyValueCodecWithTags|MessageCodec)|org\\.apache\\.hadoop\\.hbase\\.regionserver\\.wal\\.(WALCellCodec|SecureWALCellCodec)"
+  },
+  {
+    "name": "hbase.client.registry.impl",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.client\\.(AbstractRpcBasedConnectionRegistry|MasterRegistry|RegionServerRegistry|RpcConnectionRegistry|ZKConnectionRegistry)"
+  },
+  {
+    "name": "hbase.client.request.controller.impl",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.client\\.(RequestController|SimpleRequestController)"
+  },
+  {
+    "name": "hbase.client.sasl.provider.class",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.security\\.provider\\.(AuthenticationProviderSelector|BuiltInProviderSelector)"
+  },
+  {
+    "name": "hbase.client.userprovider.class",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.security\\.UserProvider"
+  },
+  {
+   "name": "hbase.crypto.cipherprovider",
+   "regex": "org\\.apache\\.hadoop\\.hbase\\.io\\.crypto\\.(CryptoCipherProvider|DefaultCipherProvider)" 
+  },
+  {
+    "name": "hbase.hregion.block.storage.policy",
+    "regex": "ALL_SSD|ONE_SSD|HOT|COLD|WARM|LAZY_PERSIST"
+  },
+  {
+    "name": "hbase.ipc.server.callqueue.balancer.class",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.ipc\\.RandomQueueBalancer|^$"
+  },
+  {
+    "name": "hbase.master.loadbalancer.class",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.master\\.balancer\\.BaseLoadBalancer|org\\.apache\\.hadoop\\.hbase\\.favored\\.FavoredNodeLoadBalancer|org\\.apache\\.hadoop\\.hbase\\.master\\.balancer\\.FavoredStochasticBalancer|org\\.apache\\.hadoop\\.hbase\\.master\\.balancer\\.MaintenanceLoadBalancer|org\\.apache\\.hadoop\\.hbase\\.rsgroup\\.RSGroupBasedLoadBalancer|org\\.apache\\.hadoop\\.hbase\\.master\\.balancer\\.SimpleLoadBalancer|org\\.apache\\.hadoop\\.hbase\\.master\\.balancer\\.StochasticLoadBalancer"
+  },
+  {
+    "name": "hbase.master.rpc.scheduler.factory.class",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.regionserver\\.(FifoRpcSchedulerFactory|MasterFifoRpcSchedulerFactory|SimpleRpcSchedulerFactory)"
+  },
+  {
+    "name": "hbase.master.store.region.file-tracker.impl",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.regionserver\\.storefiletracker\\.(DefaultStoreFileTracker|FileBasedStoreFileTracker|MigrationStoreFileTracker|StoreFileTrackerBase)"
+  },
+  {
+    "name": "hbase.region.server.rpc.scheduler.factory.class",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.regionserver\\.(FifoRpcSchedulerFactory|MasterFifoRpcSchedulerFactory|SimpleRpcSchedulerFactory|)"
+  },
+  {
+    "name": "hbase.regionserver.flush.policy",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.regionserver\\.(FlushAllLargeStoresPolicy|FlushAllStoresPolicy|FlushLargeStoresPolicy|FlushNonSloppyStoresFirstPolicy)"
+  },
+  {
+    "name": "hbase.regionserver.flush.throughput.controller",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.regionserver\\.throttle\\.(NoLimitThroughputController|PressureAwareCompactionThroughputController|PressureAwareFlushThroughputController|PressureAwareThroughputController)"
+  },
+  {
+    "name": "hbase.regionserver.heapmemory.tuner.class",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.regionserver\\.DefaultHeapMemoryTuner|^$"
+  },
+  {
+    "name": "hbase.regionserver.hlog.async.writer.impl",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.regionserver\\.wal\\.(AsyncProtobufLogWriter|SecureAsyncProtobufLogWriter)"
+  },
+  {
+    "name": "hbase.regionserver.hlog.reader.impl",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.regionserver\\.wal\\.(ProtobufLogReader|SecureProtobufLogReader)"
+  },
+  {
+    "name": "hbase.regionserver.hlog.writer.impl",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.regionserver\\.wal\\.(ProtobufLogWriter|SecureProtobufLogWriter)"
+  },
+  {
+    "name": "hbase.regionserver.memstore.class",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.regionserver\\.(AbstractMemStore|CompactingMemStore|DefaultMemStore)"
+  },
+  {
+    "name": "hbase.regionserver.throughput.controller",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.regionserver\\.throttle\\.(NoLimitThroughputController|PressureAwareCompactionThroughputController|PressureAwareFlushThroughputController|PressureAwareThroughputController)"
+  },
+  {
+    "name": "hbase.regionserver.wal.codec",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.codec\\.(CellCodec|CellCodecWithTags|KeyValueCodec|KeyValueCodecWithTags|MessageCodec)|org\\.apache\\.hadoop\\.hbase\\.regionserver\\.wal\\.(WALCellCodec|SecureWALCellCodec)"
+  },
+  {
+    "name": "hbase.rpc.client.impl",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.ipc\\.(AbstractRpcClient|BlockingRpcClient|NettyRpcClient)"
+  },
+  {
+    "name": "hbase.rpc.server.impl",
+    "regex": "org\\.apache\\.hadoop\\.hbase\\.ipc\\.(AbstractRpcServer|BlockingRpcServer|NettyRpcServer)"
+  },
+  {
+    "name": "hbase.wal.storage.policy",
+    "regex": "ALL_SSD|ONE_SSD|HOT|COLD|WARM|LAZY_PERSIST"
   }
+
+
+
+
 ]
