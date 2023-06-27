@@ -21,9 +21,9 @@ public class TestDebug {
     System.out.println("tasks: " + tasks);
     String options = conf.get("mapred.map.child.java.opts");
     System.out.println("options: " + options);
-    if (Integer.valueOf(tasks) < 50) {
-      throw new RuntimeException("tasks < 50");
-    }
+    //if (Integer.valueOf(tasks) < 50) {
+	//  throw new RuntimeException("tasks < 50");
+    //}
     String s = conf.get("fs.s3a.select.output.csv.quote.fields");
     System.out.println("s: " + s);
     if (Objects.equals(s, "asneeded")) {
