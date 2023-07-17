@@ -457,7 +457,7 @@
   },
   {
     "name": "dfs.encrypt.data.transfer.cipher.suites",
-    "regex": "AES|CTR|NoPadding|^ $"
+    "regex": "AES|CTR|NoPadding|^$"
   },
   {
     "name": "dfs.encrypt.data.transfer.cipher.key.bitlength",
@@ -493,7 +493,7 @@
   },
   {
     "name": "dfs.namenode.top.windows.minutes",
-    "regex": "1,5,25|[0-9]{1,9},[0-9]{1,9},[0-9]{1,9}"
+    "regex": "[1-9][0-9]{0,7},[1-9][0-9]{0,7},[1-9][0-9]{0,7}"
   },
   {
     "name": "dfs.webhdfs.rest-csrf.methods-to-ignore",
@@ -569,7 +569,7 @@
   },
   {
     "name": "dfs.client.short.circuit.num",
-    "lower": 0,
+    "lower": 1,
     "upper": 5
   },
   {
@@ -618,7 +618,7 @@
   {
     "name": "dfs.datanode.http.internal-proxy.port",
     "lower": 0,
-    "upper": 65536
+    "upper": 65535
   },
   {
     "name": "hadoop.security.groups.cache.secs",
@@ -859,9 +859,62 @@
   {
     "name": "hbase.wal.storage.policy",
     "regex": "ALL_SSD|ONE_SSD|HOT|COLD|WARM|LAZY_PERSIST"
-  }
-
-
-
-
+  },
+  {
+    "name": "hadoop.security.groups.cache.background.reload.threads",
+    "lower": 0
+  },
+  {
+      "name": "yarn.app.mapreduce.client.job.retry-interval",
+      "lower": 0
+  },
+  {
+      "name": "dfs.namenode.stale.datanode.interval",
+      "lower": 1
+  },
+  {
+      "name": "dfs.namenode.full.block.report.lease.length.ms",
+      "lower": 1
+  },
+  {
+      "name": "dfs.namenode.max.full.block.report.leases",
+      "lower": 1
+  },
+  {
+      "name": "dfs.namenode.num.extra.edits.retained",
+      "lower": 0
+  },
+  {
+      "name": "dfs.namenode.blocks.per.postponedblocks.rescan",
+      "lower": 0
+  },
+  {
+      "name": "dfs.namenode.num.checkpoints.retained",
+      "lower": 1
+  },
+  {
+      "name": "dfs.namenode.replication.work.multiplier.per.iteration",
+      "lower": 1
+  },
+  {
+      "name": "dfs.domain.socket.disable.interval.seconds",
+      "lower": 0
+  },
+  {
+      "name": "dfs.client.read.striped.threadpool.size",
+      "lower": 1
+  },
+  {"name": "dfs.namenode.replication.min", "lower": 1},
+  {"name": "dfs.namenode.decommission.interval.testing", "lower": 0},
+  {"name": "dfs.namenode.retrycache.expirytime.millis", "lower": 1},
+  {"name": "dfs.namenode.write.stale.datanode.ratio", "lower": 0, "upper": 1},
+  {"name": "dfs.namenode.top.window.num.buckets", "upper": 2147483647},
+  {"name": "dfs.namenode.fs-limits.max-xattrs-per-inode", "lower": 1},
+  {"name": "dfs.namenode.lease-recheck-interval-ms", "lower": 1},
+  {"name": "dfs.namenode.blockreport.queue.size", "lower": 1},
+  {"name": "dfs.namenode.maintenance.replication.min", "lower": 0},
+  {"name": "dfs.ha.zkfc.port", "lower": 0, "upper": 65535},
+  {"name": "dfs.namenode.list.openfiles.num.responses", "lower": 1},
+  {"name": "ipc.server.read.connection", "lower": 1},
+  {"name": "hadoop.http.authentication.token.validity", "lower": 1}
 ]
