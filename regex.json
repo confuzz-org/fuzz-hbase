@@ -397,7 +397,7 @@
   },
   {
     "name": "dfs.datanode.du.reserved.calculator",
-    "regex": "org\\.apache\\.hadoop\\.hdfs\\.server\\.datanode\\.fsdataset\\.impl\\.ReservedSpaceCalculator$ReservedSpaceCalculatorAbsolute|"
+    "regex": "org\\.apache\\.hadoop\\.hdfs\\.server\\.datanode\\.fsdataset\\.impl\\.ReservedSpaceCalculator\\$ReservedSpaceCalculatorAbsolute|"
   },
   {
     "name": "dfs.namenode.edits.journal-plugin.qjournal",
