@@ -15,6 +15,17 @@ public class TestDebug {
     HBaseClassTestRule.forClass(TestDebug.class);
 
   @Test
+  public void testECFuzzFail() throws Exception {
+      //hbase.client.pause
+    Configuration conf = HBaseConfiguration.create();
+    String pause  = conf.get("hbase.client.pause");
+    if (pause != null && pause.equals("198")) {
+	  throw new Exception("pause is 1000");
+    }
+  }
+
+    
+  @Test
   public void test() {
     Configuration conf = HBaseConfiguration.create();
     String tasks = conf.get("hbase.regionserver.msginterval");
